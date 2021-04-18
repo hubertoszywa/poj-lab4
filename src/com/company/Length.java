@@ -60,8 +60,6 @@ public class Length {
 
 
     public String kindOfTriangle() {
-        boolean obtuse = false;
-        boolean rectangular = false;
 
         if (ab == bc && ab == ca && bc == ca)
             return "Równoboczny";
@@ -81,10 +79,6 @@ public class Length {
     }
 
     public boolean checkTriangle() {
-        if(ab >= (bc+ca) || ca >= (bc+ab) || bc >= (ab+ca)) {
-            return false;
-        } else {
-            return true;
-        }
+        return !(ab >= (bc + ca)) && !(ca >= (bc + ab)) && !(bc >= (ab + ca));
     }
 }

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Start {
 
-    int userChoice; // zmienna przechowuje informację z ostatnim wyborem użytkownika
+    int userChoice;
     static boolean isTriangle = true;
 
 
