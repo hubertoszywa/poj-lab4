@@ -79,10 +79,6 @@ public class Point{
         bc = Math.sqrt(Math.pow(p3.x - p2.x, 2) + Math.pow(p3.y - p2.y, 2));
         ca = Math.sqrt(Math.pow(p3.x - p1.x, 2) + Math.pow(p3.y - p1.y, 2));
 
-        if(ab >= (bc+ca) || ca >= (bc+ab) || bc >= (ab+ca)) {
-            return false;
-        } else {
-            return true;
-        }
+        return !(ab >= (bc + ca)) && !(ca >= (bc + ab)) && !(bc >= (ab + ca));
     }
 }
