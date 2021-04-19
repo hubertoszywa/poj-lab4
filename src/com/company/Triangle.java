@@ -18,14 +18,14 @@ public class Triangle {
         ab = Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2));
         bc = Math.sqrt(Math.pow(p3.x - p2.x, 2) + Math.pow(p3.y - p2.y, 2));
         ca = Math.sqrt(Math.pow(p3.x - p1.x, 2) + Math.pow(p3.y - p1.y, 2));
-    };
-
-    public Triangle(double a, double b, double c){
-
-        ab = a;
-        bc = b;
-        ca = c;
     }
+
+//    public Triangle(double a, double b, double c){
+//
+//        ab = a;
+//        bc = b;
+//        ca = c;
+//    }
 
 
 
@@ -35,8 +35,7 @@ public class Triangle {
         Scanner sc = new Scanner(System.in);
         while (true) {
             try {
-                double x = sc.nextDouble();
-                return x;
+                return sc.nextDouble();
             } catch (InputMismatchException e) {
                 System.err.print("Podałeś dziwną wartość :/ Spróbuj jeszcze raz: ");
                 sc.next();
